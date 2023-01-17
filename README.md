@@ -2,14 +2,12 @@
 Module 3, Python - UNCCH Data Analytics Bootcamp, Spring 2023
 
 ## Project Overview
-The purpose of this election analysis audit is well defined. (3 pt)
-
-A Colorado board of elections employee, Tom, has asked for help with an election audit of the tabulated results for a U.S. congressional precinct in Colorado. The job is to generate a vote count report to certify this U.S. congressional race, including: 
+Colorado board of elections employees have requested assistance with an election audit of the tabulated results for a U.S. congressional precinct in Colorado. The objective is to generate a vote count report to certify this U.S. congressional race, including: 
 
 1. The total number of votes cast
-2. The list of candidates who received votes
-3. The total number of votes for each candidate
-4. The percentage of votes for each candidate
+2. The number and percentage of votes cast by each participating county
+3. A list of candidates who received votes
+4. The total number and percentage of votes received by each candidate in the race
 5. The winner of the election based on the popular vote
 
 ## Resources
@@ -18,8 +16,6 @@ A Colorado board of elections employee, Tom, has asked for help with an election
 - IDE: Visual Studio Code 1.74.3
 
 ## Election Audit Results
-There is a bulleted list where each election outcome is addressed. (7 pt)
-
 The analysis of the election results, including county data, are as follows (Python terminal output):
 
     Election Results
@@ -51,20 +47,18 @@ The analysis of the election results, including county data, are as follows (Pyt
     -------------------------
 
 
-The .txt file output of the election results are as follows (.txt file output):
-
-![election_txt_output](/main/analysis/election_txt_output.png)
+The text file output of the election results can be found at this link (.txt file output):
+[election_analysis](/main/analysis/election_analysis.txt)
 
 ## Election Audit Summary
-    There is a statement to the election commission that explores how this script can be used for any election, with two examples for modifying the script. (4 pt)
+This script employs "for" loops to step through each row of the data file and count votes by both county and candidate.
+This script can be used for any election, provided the data are supplied in a .csv file containing 3 columns columns for ballot ID, county, and candidate. If alternate election data contains a different column order or format, this script can be modified accordingly to suit the available data by changing the column indexes. If a different election were to be audited that contained additional candidates or attributes (e.g. specific precinct data), this script can also be modified to parse and display those data using similar techniques to the way that candidate and county statistics were presented here. 
+
 
 ## Method
-The code used to perform this analysis is as follows: 
+The Python script used to perform this analysis is as follows: 
 
  ```
-# -*- coding: UTF-8 -*-
-"""PyPoll Homework Challenge Solution."""
-
 # Add our dependencies.
 import csv
 import os
