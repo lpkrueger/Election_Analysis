@@ -48,7 +48,7 @@ The analysis of the election results, including county data, are as follows (Pyt
 
 
 The text file output of the election results can be found at this link (.txt file output):
-[election_analysis](/main/analysis/election_analysis.txt)
+[election_analysis](https://github.com/lpkrueger/Election_Analysis/blob/main/analysis/election_analysis.txt)
 
 ## Election Audit Summary
 This script employs "for" loops to step through each row of the data file and count votes by both county and candidate.
